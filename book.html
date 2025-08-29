@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="shortcut icon" type="x-icon" href="logo2.jpg">
+  <link rel="stylesheet" href="book.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>BOOK YOUR TOUR</title>
+ 
+</head>
+<body>
+  <form action="https://api.web3forms.com/submit" method="POST">
+    <input type="hidden" name="access_key" value="b008952b-96a3-4678-8a1e-6f740594ab56">
+
+    <h2>Book Your Tour</h2>
+
+    <label for="fullname">Full Name</label>
+    <input type="text" id="fullname" name="fullname" required />
+
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" required />
+
+    <!-- ✅ New Destination Field -->
+    <label for="destination">Destination</label>
+    <select id="destination" name="destination">
+      <option value="">Select a destination</option>
+      <option>Akagera National Park</option>
+      <option>Nyungwe Forest</option>
+      <option>Lake Kivu</option>
+      <option>Musanze cave</option>
+      <option>King palace</option>
+      <option>Ethnographic Museum (Huye)</option>
+      <option>Kigali Genocide Memorial</option>
+      <option >Rubavu Hot Springs</option>
+      <option >Camp Kigali Memorial</option>
+      <option >Rwesero Art Museum</option>
+      <option >Mount Bisoke Hike</option>
+      <option >Gisenyi Beach</option>
+      <option>Karongi (Kibuye)</option>
+       <option>Lake Muhazi</option>
+        <option>Volcanoes National Park</option>
+         <option>Gishwati-Mukura Park</option>
+          <option>Iby’Iwacu Cultural Village</option>
+           <option>Nemba Hot Springs</option>
+            <option>Rusumo Falls</option>
+            <option>Bwindi Extension</option>
+            <option>Twin Lakes (Burera & Ruhondo)</option>
+            <option>Congo Nile Trail</option>
+            <option>Kibuye Beaches</option>
+            <option>Bugarama Valley</option>
+            <option>Mount Karisimbi</option>
+            <option >Gorilla Trekking Tour</option>
+             <option >Rubavu Town</option>
+              <option >Inema Arts Center</option>
+               <option >Bugesera Reconciliation Village</option>
+      <option>Volcanoes National Park</option>
+      <option>Kigali City Tour</option>
+    </select>
+
+    <label for="tickets">Number of tickets</label>
+    <input type="number" id="tickets" name="tickets" min="1" required />
+    <label>Type of car</label>
+    <input type="text"  id="car" name="Cars">
+    <label for="people">Number of People</label>
+    <input type="number" id="people" name="people" min="1" required />
+
+    <label for="enquiry">Your Enquiry</label>
+    <textarea id="enquiry" name="enquiry" rows="5" required></textarea>
+
+    <button type="submit">Submit Booking</button>
+  </form>
+</body>
+</html>

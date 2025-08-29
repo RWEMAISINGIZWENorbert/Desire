@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Volcanoes Trails and Travel</title>
+   <link rel="shortcut icon" type="x-icon" href="gt.png">
+   <link rel="stylesheet" href="web2.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet" />
+
+
+  <script>
+  const heroContent = [
+    {
+      image: 'zebra1.jpg',
+      title: 'Discover Rwanda’s Wildlife',
+      text: 'Experience nature like never before.'
+    },
+    {
+      image: 'gorilla3.png',
+      title: 'Track the Majestic Gorillas',
+      text: 'An adventure you’ll never forget.'
+    },
+    {
+      image: 'lake.png',
+      title: 'Relax by Lake Kivu',
+      text: 'Serenity and beauty in one place.'
+    },
+    {
+      image: 'kenya.jpg',
+      title: 'Cross the Borders to Kenya',
+      text: 'Explore East Africa’s treasures.'
+    },
+    {
+      image: 'park1.webp',
+      title: 'Discover Akagera National Park',
+      text: 'Where wildlife roams free.'
+    },
+    {
+      image: 'park2.jpg',
+      title: 'Trek Through Mukura Forest',
+      text: 'Breathe in the freshness of nature.'
+    },
+    {
+      image: 'park3.webp',
+      title: 'Bird Watching in Nyungwe',
+      text: 'Catch a glimpse of rare species.'
+    },
+    {
+      image: 'park4.webp',
+      title: 'Explore Mountain Trails',
+      text: 'For the thrill-seekers and nature lovers.'
+    },
+    {
+      image: 'park5.jpg',
+      title: 'See Elephants in the Wild',
+      text: 'A true African safari experience.'
+    },
+    {
+      image: 'park6.jpg',
+      title: 'Sunsets in the Savannah',
+      text: 'Every moment is magical.'
+    },
+    {
+      image: 'palace.jpg',
+      title: 'Visit the Royal Palace',
+      text: 'A journey into Rwanda’s rich history.'
+    },
+    {
+      image: 'site.jpg',
+      title: 'Heritage Sites Await',
+      text: 'Cultural roots run deep.'
+    },
+    {
+      image: 'des.jpg',
+      title: 'Desert Vibes in East Africa',
+      text: 'Uncover unique landscapes.'
+    }
+  ];
+
+  let currentIndex = 0;
+
+  window.addEventListener('DOMContentLoaded', () => {
+    const heroSection = document.querySelector('.hero');
+    const heroTitle = heroSection.querySelector('h1');
+    const heroText = heroSection.querySelector('p');
+
+    function changeHeroImage() {
+      const current = heroContent[currentIndex];
+      heroSection.style.backgroundImage = `linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(${current.image})`;
+      heroTitle.textContent = current.title;
+      heroText.textContent = current.text;
+      currentIndex = (currentIndex + 1) % heroContent.length;
+    }
+
+    changeHeroImage(); // Initial load
+    setInterval(changeHeroImage, 7000); // Change every 4 seconds
+
+    document.querySelector('.toggle-mode').addEventListener('click', () => {
+      document.body.classList.toggle('dark-mode');
+    });
+  });
+</script>
+
+</head>
+<body>
+
+  <div class="topbar">
+    <div>
+      <span>📞 +250 795550349</span>
+      <span>✉️  Volcanoestrailstourcompany@gmail.com </span>
+    </div>
+  </div>
+
+  <nav>
+    <nav class="logo">
+      <img src="gt.png" alt="">
+    </nav>
+    <a href="#home">Home</a>
+    <a href="destination.html">Destination</a>
+    <a href="tour.html">Tour Package</a>
+    <a href="car.html">Car Rental</a>
+    <a href="contact.html">Payment</a>
+  </nav>
+
+  <section class="hero" id="home">
+    <h1>Welcome to Volcanoes Trails</h1>
+    <p>Explore the beauty of Rwanda</p>
+  </section>
+
+  <section class="mission-vision">
+    <div class="content-container">
+      <div class="card">
+        <h2>Our Mission</h2>
+        <p>To provide unforgettable travel experiences through quality service, cultural immersion, and responsible tourism across East Africa.</p>
+      </div>
+      <div class="card">
+        <h2>Our Vision</h2>
+        <p>To become the leading eco-tourism agency in East Africa, inspiring people to explore and preserve nature and heritage.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="tour-packages" id="booking">
+    <h2>Popular Tour Package</h2>
+    <div class="tour-cards">
+      <div class="tour-card">
+        <img src="hat.jpg" alt="Rwanda Tour" />
+        <div class="info">
+          <p><strong>8 Days / 7 Nights</strong></p>
+          <h3>8 Days in Rwanda</h3>
+          <p>📍 Rwanda</p>
+          <p class="price">Starting From $4500 per person</p>
+          <a href="book.html" class="book-btn">BOOK NOW</a>
+        </div>
+      </div>
+      <div class="tour-card">
+        <img src="park7.jpg" />
+        <div class="info">
+          <p><strong>6 Days / 5 Nights</strong></p>
+          <h3>6-Days Kigali to Kampala / Jinja</h3>
+          <p>📍 Rwanda, Uganda</p>
+          <p class="price">Starting From $1500</p>
+          <a href="book.html" class="book-btn">BOOK NOW</a>
+        </div>
+      </div>
+      <div class="tour-card">
+        <img src="park8.jpg" />
+        <div class="info">
+          <p><strong>7 Days / 6 Nights</strong></p>
+          <h3>Hidden Gems of Rwanda 7-Days Adventure</h3>
+          <p>📍 Rwanda</p>
+          <p class="price">Starting From $2500</p>
+          <a href="book.html" class="book-btn">BOOK NOW</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="destinations" id="features">
+    <div class="subtitle">Get Ready To</div>
+    <h2>Explore Top Destination</h2>
+    <p>Embark on an extraordinary journey through East Africa’s most captivating destinations with our popular tour packages.</p>
+    <div class="destination-grid">
+      <div><img src="kenya.jpg" />Akagera National Park</div>
+      <div><img src="park4.webp" />Nyungwe National Park</div>
+      <div><img src="CONGO.jpg" />waterfall</div>
+    </div>
+    <div class="destination-grid">
+      <div><img src="park1.webp" />Akagera National Park</div>
+      <div><img src="park2.jpg" />Mukura forest</div>
+      <div><img src="lake.png" />Lake Kivu</div>
+    </div>
+  </section>
+
+  <section class="team" id="team">
+    <h2>Meet Our Team</h2>
+    <p>Our dedicated professionals are passionate about creating unforgettable travel experiences.</p>
+    <div class="team-grid">
+      <div class="team-member">
+        <img src="dez1.jpg" alt="CEO">
+        <h3>UMUHIRE Desire</h3>
+        <p>CEO & Founder</p>
+      </div>
+      <div class="team-member">
+        <img src="josh1.jpg" alt="Tour Guide">
+        <h3>DUKUNDIMANA Joshua</h3>
+        <p>Senior Tour Guide</p>
+      </div>
+    
+      <div class="team-member">
+        <img src="muku.jpg" alt="Driver">
+        <h3>MUKUNZI</h3>
+        <p>Tour Driver</p>
+      </div>
+      
+      <div class="team-member">
+        <img src="tour2.jpg" alt="Booking Manager">
+        <h3>Claudine Uwase</h3>
+        <p>Booking Manager</p>
+      </div>
+
+      <div class="team-member">
+        <img src="pamera1.jpg" alt="Booking Manager">
+        <h3>IRIBAGIZA Pamala</h3>
+        <p>Booking Manager</p>
+      </div>
+     
+    </div>
+  </section>
+    <footer>
+  <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; padding: 2rem; background-color: rgb(26, 13, 136); color: white; text-align: left;">
+    <div style="flex: 1; min-width: 200px; margin-bottom: 1rem;">
+      <h3 style="margin-bottom: 0.5rem;">📍 Location</h3>
+      <p>Musanze, Rwanda<br>MN 5 Rd, Musanze, Kinigi</p>
+    </div>
+    <div style="flex: 1; min-width: 200px; margin-bottom: 1rem;">
+      <h3 style="margin-bottom: 0.5rem;">📞 Contact</h3>
+      <p>Phone: +250 795550349<br>Email:  Volcanoestrailstourcompany@gmail.com </p>
+    </div>
+    <div style="flex: 1; min-width: 200px;">
+      <h3 style="margin-bottom: 0.5rem;">🔗 Follow Us</h3>
+      <p>
+        <a href="https://web.facebook.com/profile.php?id=61578082887163" target="_blank" style="color: #fff; text-decoration: none; margin-right: 10px;">Facebook</a> |
+        <a href="https://www.instagram.com/tou_rcompany/" target="_blank" style="color: #fff; text-decoration: none; margin-right: 10px;">Instagram</a> |
+        <a href="https://x.com/volcanoestrails" target="_blank" style="color: #fff; text-decoration: none;">Twitter</a>
+      </p>
+    </div>
+  </div>
+</body>
+</html>

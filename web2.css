@@ -1,0 +1,348 @@
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background-color: #121212;
+      color: #f1f1f1;
+      line-height: 1.6;
+      transition: background 0.5s, color 0.5s;
+    }
+
+    body.light-mode {
+      background-color: #f5f5f5;
+      color: #111;
+    }
+
+    .topbar {
+      background-color: rgb(55, 35, 168);
+      color: #f3f3f3;
+      padding: 0.6rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.9rem;
+    }
+
+    .topbar span {
+      margin-right: 1.2rem;
+    }
+
+    header {
+      background: linear-gradient(to right, #190c3a, #1c1c3f);
+      padding: 2rem 1rem;
+      text-align: center;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.4);
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      color: #00ff88;
+      letter-spacing: 2px;
+
+}
+.logo{
+  height: 80px;
+}
+nav img {
+  height: 112px;
+  width: 200px;
+  translate: -400px -32px;
+  border: none;
+  outline: none;
+}
+
+    nav {
+      background-color: #050538;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding: 1rem ;
+      position: sticky;
+      top: 0;
+      z-index: 999;
+    }
+
+    nav a {
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #00ff88;
+    }
+
+    .hero {
+      background-size: cover;
+      background-position: center;
+      padding: 7rem 1rem;
+      text-align: center;
+      color: #fff;
+      transition: background-image 1s ease-in-out;
+      height: 600px;
+    }
+
+    .hero h1 {
+      font-size: 3.5rem;
+      margin-bottom: 1rem;
+      font-weight: bold;
+    }
+
+    .hero p {
+      font-size: 1.3rem;
+      color: #ccc;
+    }
+
+    .mission-vision {
+      background-color: #12122c;
+      padding: 3rem 2rem;
+      text-align: center;
+    }
+
+    .mission-vision .content-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 5rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .mission-vision .card {
+      background-color: #1f1f3f;
+      color: #f1f1f1;
+      padding: 2rem;
+      border-radius: 12px;
+      max-width: 450px;
+      box-shadow: 0 6px 14px rgba(0, 0, 0, 0.4);
+      transition: transform 0.3s ease;
+    }
+
+    .mission-vision .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .mission-vision .card h2 {
+      color: #00ff88;
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+    }
+
+    .mission-vision .card p {
+      color: #ccc;
+    }
+
+    .tour-packages {
+      padding: 3rem 2rem;
+      background-color: #0e0e1f;
+    }
+
+    .tour-packages h2 {
+      color: #00ff88;
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    .tour-cards {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+    }
+
+    .tour-card {
+      background: #161633;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+      transition: transform 0.3s ease;
+      max-width: 300px;
+    }
+
+    .tour-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .tour-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .tour-card .info {
+      padding: 1rem;
+    }
+
+    .tour-card .info h3 {
+      color: #00ff88;
+    }
+
+    .tour-card .info p {
+      color: #ccc;
+    }
+
+    .price {
+      color: #00ffa2;
+      font-weight: bold;
+    }
+
+    .book-btn {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.6rem 1.2rem;
+      background-color: #00ff88;
+      color: #000;
+      border-radius: 25px;
+      font-weight: bold;
+      text-decoration: none;
+      transition: background 0.3s ease;
+    }
+
+    .book-btn:hover {
+      background-color: #00cc6a;
+    }
+
+    .destinations {
+      background: linear-gradient(to bottom, #0c0c3a, #141448);
+      padding: 3rem 2rem;
+      text-align: center;
+    }
+
+    .destinations .subtitle {
+      color: #ff9d00;
+    }
+
+    .destinations h2 {
+      color: #00ff88;
+      font-size: 2rem;
+    }
+
+    .destinations p {
+      color: #ccc;
+      max-width: 700px;
+      margin: auto;
+    }
+
+    .destination-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+
+    .destination-grid div {
+      background-color: #1e1e3f;
+      padding: 0.5rem;
+      border-radius: 8px;
+      transition: transform 0.3s;
+    }
+
+    .destination-grid div:hover {
+      transform: scale(1.03);
+    }
+
+    .destination-grid img {
+      width: 100%;
+      height: 220px;
+      border-radius: 6px;
+      object-fit: cover;
+      margin-bottom: 0.5rem;
+      border: 2px solid #00ff88;
+    }
+
+    .team {
+      background-color: #1a1a2f;
+      padding: 3rem 2rem;
+      text-align: center;
+    }
+
+    .team h2 {
+      color: #00ff88;
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    .team p {
+      color: #ccc;
+      max-width: 700px;
+      margin: auto auto 2rem;
+    }
+
+    .team-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+    }
+
+    .team-member {
+      background-color: #24244a;
+      padding: 1rem;
+      border-radius: 12px;
+      width: 250px;
+      text-align: center;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+      transition: transform 0.3s ease;
+    }
+
+    .team-member:hover {
+      transform: translatey(-16px);
+    }
+
+    .team-member img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-bottom: 1rem;
+
+    }
+
+    .team-member h3 {
+      color: #00ff88;
+    }
+
+    .team-member p {
+      color: #ccc;
+    }
+
+    footer {
+      background-color: rgb(31, 30, 30);
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    
+    }
+
+    .toggle-mode {
+      position: fixed;
+      top: 15px;
+      right: 20px;
+      background: #00ff88;
+      color: #000;
+      border: none;
+      padding: 0.6rem 1rem;
+      border-radius: 20px;
+      cursor: pointer;
+      font-weight: bold;
+      z-index: 1000;
+    }
+
+    @media (max-width: 768px) {
+      .hero h1 {
+        font-size: 2rem;
+      }
+
+      nav {
+        flex-wrap: wrap;
+        gap: 1rem;
+      }
+      
+    }
+  

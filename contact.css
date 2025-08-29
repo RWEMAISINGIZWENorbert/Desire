@@ -1,0 +1,79 @@
+
+    body {
+      background: linear-gradient(135deg, #1f1c2c, #928dab);
+      font-family: 'Montserrat', sans-serif;
+      color: #f1f1f1;
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    header {
+      width: 100%;
+      padding: 2rem 0;
+      background: linear-gradient(to right, #190c3a, #1c1c3f);
+      text-align: center;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.4);
+      color: #00ff88;
+      font-size: 2.5rem;
+      font-weight: 700;
+      letter-spacing: 2px;
+    }
+
+    .container {
+      background-color: rgba(0,0,0,0.75);
+      padding: 2.5rem 3rem;
+      border-radius: 12px;
+      box-shadow: 0 12px 40px rgba(0,0,0,0.6);
+      max-width: 450px;
+      width: 90vw;
+      margin: 2rem 0;
+      text-align: center;
+    }
+
+    h2 {
+      color: #00ff88;
+      margin-bottom: 2rem;
+      font-weight: 700;
+      letter-spacing: 1.2px;
+    }
+
+    .payment-method {
+      display: flex;
+      align-items: center;
+      background: #222244;
+      border-radius: 10px;
+      padding: 1rem 1.5rem;
+      margin-bottom: 1.5rem;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+      gap: 1.5rem;
+      justify-content: flex-start;
+    }
+
+    .payment-method img {
+      height: 50px;
+      width: auto;
+    }
+
+    .payment-info {
+      text-align: left;
+      color: #00ff88;
+      font-weight: 600;
+      font-size: 1.1rem;
+      user-select: all;
+    }
+
+    footer {
+      background-color: blue;
+      color: #000;
+      text-align: center;
+      padding: 1rem;
+      font-weight: bold;
+      width: 100%;
+      margin-top: auto;
+    }
+  
