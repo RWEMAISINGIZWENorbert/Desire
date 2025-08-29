@@ -1,0 +1,11 @@
+{
+  "name": "desire",
+  "private": true,
+  "scripts": {
+    "start": "serve -l 3000 .",
+    "start:render": "serve -l $PORT ."
+  },
+  "dependencies": {
+    "serve": "^14.2.4"
+  }
+}
